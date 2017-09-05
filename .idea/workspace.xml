@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="313077d9-1b03-4ee2-a49c-231bb98f573c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.sass" afterPath="$PROJECT_DIR$/app/sass/main.sass" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -296,12 +295,12 @@
       <option name="presentableId" value="Default" />
       <updated>1504591670754</updated>
       <workItem from="1504591676943" duration="1772000" />
-      <workItem from="1504593674879" duration="4501000" />
+      <workItem from="1504593674879" duration="4635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6273000" />
+    <option name="totallyTimeSpent" value="6407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-8" width="1319" height="784" extended-state="6" />
