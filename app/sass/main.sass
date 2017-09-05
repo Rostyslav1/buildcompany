@@ -41,14 +41,51 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.75
-	font-family: $default-font
+	line-height: 35px
+	font-family: $Akrobat
 	overflow-x: hidden
 	opacity: 1
 
-.img-responsive
+ul, li
+	margin: 0
+	padding: 0
+a
 	display: block
-	max-width: 100%
-	height: auto
+	&:hover, &:focus, &:active
+		text-decoration: none
+		color: #ffffff
+li
+	list-style: none
+p
+	margin: 0
 
-@import "media" // Всегда в конце
+// Web kit
+
+.h1
+	font-size: 44px
+	line-height: 60px
+	color: #ffffff
+	font-weight: bold
+.h2
+	font-size: 30px
+	line-height: 40px
+	color: #ffffff
+
+.button
+	display: inline-block
+	padding: 2px 50px
+	border-bottom: 3px solid #9c531e
+	border-radius: 3px
+	font-weight: bold
+	font-size: 20px
+	text-transform: uppercase
+	color: #ffffff
+	text-align: center
+	line-height: 24px
+	background: $orange
+	transition: all .2s ease-in-out
+	&:hover, &:focus, &:active
+		background: #c0681a
+
+
+@import "media"
