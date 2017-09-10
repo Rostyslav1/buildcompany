@@ -64,16 +64,19 @@ p
 .h1
 	font-size: 44px
 	line-height: 60px
-	color: #ffffff
-	font-weight: bold
 .h2
 	font-size: 30px
 	line-height: 40px
-	color: #ffffff
+.h1, .h2
+	font-weight: bold
+	text-transform: uppercase
+	color: $yello_text
+	margin: 0
 
 .button
 	display: inline-block
 	padding: 2px 50px
+	cursor: pointer
 	border-bottom: 3px solid #9c531e
 	border-radius: 3px
 	font-weight: bold
@@ -88,12 +91,83 @@ p
 		background: #c0681a
 		border-color: #c0681a
 
-.someslass
-	color: #3223
-	display: inline
 
-.class
-	border-bottom: 1px
+// Content
+// Slider
 
+.bottom_slider
+	background-color: $broun
+	padding: 10px 0 45px
+	text-align: center
+	.h2
+		margin: 25px 0
+	.items
+		height: 515px
+		-webkit-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		text-indent: 9999px
+		opacity: .3
+		transition: opacity .4s ease-in-out
+	.center .items
+		opacity: 1
+	.owl-theme .owl-nav
+		position: absolute
+		max-width: 1140px
+		padding: 0 30px
+		margin: 0 auto
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+		right: 0
+		[class*=owl-]
+			background: $yello_text
+			border-radius: 100px
+			position: relative
+			width: 40px
+			height: 40px
+			.fa
+				color: $broun
+				font-size: 30px
+				position: absolute
+		.owl-prev
+			float: left
+			.fa
+				left: 13px
+		.owl-next
+			float: right
+			.fa
+				right: 13px
+
+// Contact
+
+.contact
+	background: rgba(55, 42, 37, 0.56)
+	padding: 30px 0 35px
+	.h2, p
+		text-align: center
+	.h2
+		font-family: $AkrobatExtraBold
+	p
+		margin-top: 25px
+		color: $yello_text
+		font-family: $AkrobatSemiBold
+	input[type='text'], label, select
+		font-family: $AkrobatSemiBold
+		outline: none
+		appearance: none
+	label, select
+		color: $yello_text
+	select
+		width: 200px
+		border: none
+		border-bottom: 1px solid $yello_text
+		background-color: transparent
+		padding: 10px 5px
+		line-height: 20px
+		font-size: 20px
+		cursor: pointer
+		background: url('../img/select_arrow.png') right center no-repeat
 
 @import "media"

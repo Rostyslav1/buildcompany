@@ -30,21 +30,79 @@
 
 <body>
 
-	<div class="container">
+	<section class="bottom_slider">
 
-		<div class="row">
+		<h2 class="h2">Хід роботи</h2>
 
-			<div class="col-sm-8 col-sm-offset-2">
+		<div class="slider">
 
-				<a href="#" class="button">дізнатися більше</a>
+			<div id="bottom_carousel" class="owl-carousel owl-theme">
+
+				<div class="items" style="background-image: url('img/slide-1.png')">1</div>
+				<div class="items" style="background-image: url('img/slide-1.png')">2</div>
+				<div class="items" style="background-image: url('img/slide-1.png')">3</div>
+				<div class="items" style="background-image: url('img/slide-1.png')">4</div>
 
 			</div>
-			
+
 		</div>
 
-	</div>
-	
+	</section>
+
+	<section class="contact">
+		<div class="container">
+
+			<form action="">
+
+				<div class="top_wrapper">
+					<h2 class="h2">Зв'язатися з нами</h2>
+					<p>Ви можете замовити зворотній дзвінок у будь-який зручний для Вас час!</p>
+					<select name="city">
+						<option value="Івано-Франківськ">Івано-Франківськ</option>
+						<option value="Львів">Львів</option>
+					</select>
+				</div>
+
+				<div class="bottom_input_wrapper">
+					<div class="row">
+
+						<div class="col-2 offset-1">
+							<div class="input_data">
+								<label for="name">Ваше ім'я</label>
+								<input type="text" id="name" name="name">
+							</div>
+						</div>
+
+						<div class="col-2 offset-1">
+							<div class="input_data">
+								<label for="phone">Номер телефону:</label>
+								<input type="text" id="phone" name="phone">
+							</div>
+						</div>
+
+						<div class="col-1 offset-4">
+							<div class="input_data">
+								<label for="time">Коли зателефонувати:</label>
+								<input type="text" id="time" placeholder="Time">
+							</div>
+							<div class="submit">
+								<input class="button" type="submit" value="Замовити дзвінок">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+	</section>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+		  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 
 </body>
