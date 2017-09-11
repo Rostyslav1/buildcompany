@@ -1,5 +1,13 @@
 $(function() {
 
+    $('#nav-icon3').click(function () {
+        $('.main_menu').slideToggle();
+    });
+
+    $('#nav-icon3').click(function(){
+        $(this).toggleClass('open');
+    });
+
 	// Scroll to id
     // $("a[rel='m_PageScroll2id']").mPageScroll2id();
 

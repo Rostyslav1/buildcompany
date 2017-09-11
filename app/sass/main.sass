@@ -93,8 +93,213 @@ p
 
 
 // Content
-// Slider
+.main_header
+	background: url('../img/Header-img.jpg') no-repeat
+	width: 100%
+	padding-bottom: 100px
+	-webkit-background-size: cover
+	background-size: cover
+.main_menu
+	ul
+		padding-top: 24px
+	li
+		display: inline-block
+		a
+			padding: 0 28px
+			font-size: 16px
+			color: $yello_text
+			font-family: $AkrobatSemiBold
+			text-transform: uppercase
+			&:hover
+				color: #ffffff
+.main_contacts
+	ul
+		padding-top: 24px
+		padding-left: 62px
+		li
+			display: inline-block
+		a
+			color: $yello_text
+			padding: 0 12px
 
+.main_title
+	text-align: center
+	margin-top: 122px
+	background-color: RGBA(83, 89, 88, 0.6)
+	h1
+		text-transform: uppercase
+		color: $yello_text
+		font-family: $Akrobat
+		font-weight: 700
+		padding: 40px 31px 32px
+		line-height: 58px
+.main_about
+	color: $yello_text
+	margin-top: 85px
+	p
+		text-align: center
+		font-family: $AkrobatSemiBold
+		&:nth-child(1)
+			padding: 0 106px
+.maint_button
+	margin-top: 47px
+	text-align: center
+.main_submit .button
+	border:
+		bottom: 2px solid #9c531e
+		top: 0px
+		left: 0px
+		right: 0px
+
+//Build
+.build
+	background-color: #495642
+.img_build img
+	width: 100%
+.build_info
+	text-align: right
+	padding-right: 80px
+	padding-top: 40px
+	padding-bottom: 10px
+	h2
+		text-transform: uppercase
+		color: $yello_text
+		font-family: $AkrobatSemiBold
+		border-bottom: 1px solid #eeecbd
+		display: inline-block
+		padding-bottom: 23px
+		padding-left: 10px
+.info_list
+	padding-right: 80px
+	.fa
+		padding-left: 30px
+	li
+		text-align: right
+	p
+		font-size: 20px
+		padding-bottom: 4px
+		color: $yello_text
+		font-family: $AkrobatLight
+
+
+.build_second
+	background-color: #eeecbb
+	img
+		padding-left: 14px
+	.build_info
+		padding-right: 0
+		padding-left: 80px
+		text-align: left
+		padding-top: 80px
+		h2
+			color: #372a25
+			padding-left: 0
+			position: relative
+			border: none
+			&:before
+				content: ''
+				background-color: #372a25
+				width: 230px
+				position: absolute
+				height: 1px
+				display: block
+				bottom: 0
+				left: 25px
+	.info_list
+		padding-right: 0
+		padding-left: 80px
+		p
+			color: #372a25
+
+
+.build_third
+	.build_info
+		padding-top: 90px
+	h2
+		position: relative
+		border: none
+		&:before
+			content: ''
+			background-color:  $yello_text
+			width: 230px
+			position: absolute
+			height: 1px
+			display: block
+			bottom: 0
+			right: 77px
+	.info_list
+		text-align: right
+
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4
+	width: 26px
+	height: 18px
+	position: relative
+	margin: 0 auto
+	margin-left: 15px
+	-webkit-transform: rotate(0deg)
+	-moz-transform: rotate(0deg)
+	-o-transform: rotate(0deg)
+	transform: rotate(0deg)
+	-webkit-transition: .5s ease-in-out
+	-moz-transition: .5s ease-in-out
+	-o-transition: .5s ease-in-out
+	transition: .5s ease-in-out
+	cursor: pointer
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span
+	display: block
+	position: absolute
+	height: 3px
+	width: 100%
+	background: $yello_text
+	border-radius: 9px
+	opacity: 1
+	left: 0
+	-webkit-transform: rotate(0deg)
+	-moz-transform: rotate(0deg)
+	-o-transform: rotate(0deg)
+	transform: rotate(0deg)
+	-webkit-transition: .25s ease-in-out
+	-moz-transition: .25s ease-in-out
+	-o-transition: .25s ease-in-out
+	transition: .25s ease-in-out
+
+
+/* Icon 3
+.main_contacts .for_nav
+	margin-bottom: -3px
+#nav-icon3
+	span
+		&:nth-child(1)
+			top: 0px
+		&:nth-child(2), &:nth-child(3)
+			top: 7px
+		&:nth-child(4)
+			top: 14px
+	&.open span
+		&:nth-child(1)
+			top: 18px
+			width: 0%
+			left: 50%
+		&:nth-child(2)
+			-webkit-transform: rotate(45deg)
+			-moz-transform: rotate(45deg)
+			-o-transform: rotate(45deg)
+			transform: rotate(45deg)
+		&:nth-child(3)
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		&:nth-child(4)
+			top: 18px
+			width: 0%
+			left: 50%
+
+/* Icon 4
+
+// Slider
 .bottom_slider
 	background-color: $broun
 	padding: 10px 0 45px
