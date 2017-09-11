@@ -1,5 +1,9 @@
 $(function() {
 
+    // Time Picker
+    $('._jw-tpk-hour').text('Години');
+    $('._jw-tpk-minutes').text('Хвилини');
+
 	// Scroll to id
     // $("a[rel='m_PageScroll2id']").mPageScroll2id();
 
@@ -22,15 +26,36 @@ $(function() {
 
     // input time
 
-    var timepicker = new TimePicker('time', {
-        lang: 'en',
-        theme: 'dark'
+    $('#time').keypress(function () {
+        $value = $(this).val();
+
+        if($value.length == 2)
+            $(this).val($value + " : ");
     });
-    timepicker.on('change', function(evt) {
 
-        var value = (evt.hour || '00') + ':' + (evt.minute || '00');
-        evt.element.value = value;
+    $('#time').focus(function () {
+        $(this).attr("placeholder", "");
+    });
 
+    $('#time').focusout(function () {
+        $(this).attr("placeholder", "12 : 00");
+    });
+
+    // Popup
+
+    $('.image-popup-no-margins').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        closeBtnInside: false,
+        fixedContentPos: true,
+        mainClass: 'mfp-no-margins mfp-with-zoom',
+        image: {
+            verticalFit: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300
+        }
     });
 
 });

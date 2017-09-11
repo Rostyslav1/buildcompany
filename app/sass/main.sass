@@ -86,6 +86,8 @@ p
 	text-align: center
 	line-height: 24px
 	background: $orange
+	font-family: $Akrobat
+	font-weight: bold
 	transition: all .2s ease-in-out
 	&:hover, &:focus, &:active
 		background: #c0681a
@@ -145,6 +147,8 @@ p
 .contact
 	background: rgba(55, 42, 37, 0.56)
 	padding: 30px 0 35px
+	position: relative
+	z-index: 10
 	.h2, p
 		text-align: center
 	.h2
@@ -152,13 +156,53 @@ p
 	p
 		margin-top: 25px
 		color: $yello_text
+		margin-bottom: 30px
 		font-family: $AkrobatSemiBold
+	.input_data
+		margin: 0 -30px
+		display: inline-block
+	.time_input
+		height: 100%
+		margin: 0 -30px
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		.input_data
+			margin: 0
+		input[type="text"]
+			margin-top: 5px
+			display: block
+			text-align: center
+			font-size: 25px
+			color: #a6a6a6
+	.submit
+		display: inline-block
+		max-height: 33px
+		input
+			border-top: none
+			border-left: none
+			border-right: none
+			outline: none
 	input[type='text'], label, select
 		font-family: $AkrobatSemiBold
 		outline: none
 		appearance: none
+	input[type='text']
+		vertical-align: bottom
+		border: 1px solid #3f3f3f
+		padding: 0 10px
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
+		border-radius: 5px
+		width: 100%
+		height: 30px
+	label
+		line-height: 20px
+		margin-bottom: 15px
 	label, select
 		color: $yello_text
+	.top_wrapper
+		position: relative
 	select
 		width: 200px
 		border: none
@@ -169,5 +213,281 @@ p
 		font-size: 20px
 		cursor: pointer
 		background: url('../img/select_arrow.png') right center no-repeat
+		position: absolute
+		right: 0
+		top: -6px
+	#time
+		width: 125px
+	.button
+		padding: 2px 45px
+		
+._jw-tpk-dark ._jw-tpk-header
+	background: $broun
+
+.desc_wrapper
+	background: rgba(176, 107, 48, 0.8)
+	position: relative
+	z-index: 10
+	.content > div
+		display: flex
+.map_desc
+	padding: 80px 0
+	.content
+		padding: 35px 0
+		&:before
+			content: ''
+			display: block
+			width: 2px
+			background-color: #3f2e24
+			height: calc(100% - 44px)
+			position: absolute
+			left: 10px
+			top: 22px
+	p
+		line-height: 20px
+	.fa
+		width: 40px
+		text-align: center
+		line-height: 20px
+	.street
+		margin-bottom: 15px
+	.phones_wrapper
+		margin-bottom: 20px
+		p
+			max-width: 107px
+			text-align: right
+	.mail
+		margin-bottom: 5px
+	.qr_code
+		text-align: right
+
+.map_wrapper
+	position: relative
+	#map
+		position: absolute
+		top: 0
+		height: 100%
+		left: 0
+
+._jw-tpk-container
+	max-height: 190px !important
+	height: auto !important
+	z-index: 1000
+
+.about_us
+	.left_image
+		margin-left: 65px
+		width: 348px
+		-webkit-background-size: cover
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		height: 100%
+		position: relative
+		img
+			width: 220px
+			position: absolute
+			top: 36%
+			left: 50%
+			transform: translateX(-50%)
+	.content
+		padding: 42px 0
+		.h2
+			color: #372a25
+			border-bottom: 1px solid #372a25
+			display: inline-block
+			padding-right: 10px
+			padding-bottom: 25px
+		p
+			color: #372a25
+			margin-top: 50px
+	.button
+		margin-top: 35px
+		box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3)
+		transiton: all .2s ease-in-out
+		&:hover, &:focus, &:active
+			box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3)
+
+.plan
+	padding-top: 25px
+	text-align: center
+	.h2
+		color: #372a25
+		margin-bottom: 35px
+	.image-popup-no-margins
+		position: relative
+		&:hover
+			.fa
+				opacity: 1
+		.fa
+			opacity: 0
+			transition: all .2s ease-in-out
+			width: 82%
+			height: 100%
+			left: 50%
+			transform: translateX(-50%)
+			font-size: 80px
+			position: absolute
+			color: #fff
+			background-color: rgba(186, 186, 186, 0.6)
+			&:before
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+
+.house_sizes
+	background-color: #f3f2d1
+	p
+		text-align: center
+		color: #372a25
+		font-size: 20px
+		line-height: 25px
+		padding: 16px 0
+		font-family: $AkrobatLight
+		span
+			font-family: $AkrobatSemiBold
+
+img.mfp-img
+	width: 90vw
+
+.image-popup-no-margins
+	outline: none
+	padding: 0 45px 15px
+	img
+		width: 100%
+
+.mfp-no-margins
+	img.mfp-img
+		padding: 0
+	.mfp-figure:after
+		top: 0
+		bottom: 0
+	.mfp-container
+		padding: 0
+
+.mfp-with-zoom
+	.mfp-container, &.mfp-bg
+		opacity: 0
+		-webkit-backface-visibility: hidden
+		-webkit-transition: all 0.3s ease-out
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-container
+			opacity: 1
+		&.mfp-bg
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-container, &.mfp-bg
+			opacity: 0
+
+
+.why_we_better
+	padding: 35px 0 42px
+	text-align: center
+	background-color: #f1efc5
+	.row > div
+		&:nth-child(1),
+		&:nth-child(2)
+			.item
+				margin-bottom: 38px
+	.item
+		display: flex
+		align-items: center
+	.h2
+		color: #372a25
+		padding-bottom: 25px
+		margin-bottom: 38px
+		position: relative
+		display: inline-block
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			background-color: #372a25
+			width: 200px
+			height: 1px
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+	.content
+		text-align: left
+	.image
+		margin: 0 42px
+		max-width: 155px
+		flex: 0 0 155px
+		img
+			width: 100%
+	.h3
+		font-size: 25px
+		margin-bottom: 10px
+	p
+		font-size: 30px
+		text-transform: uppercase
+	.h3, p
+		font-family: $AkrobatSemiBold
+
+.discount
+	text-align: center
+	padding: 32px 0 38px
+	background-color: #372a25
+	p
+		font-size: 44px
+		color: #eeecbd
+		text-transform: uppercase
+		line-height: 50px
+		margin-bottom: 28px
+
+.location
+	text-align: center
+	padding: 38px 0 30px
+	position: relative
+	&:before
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background: url('../img/location_bg.png') center bottom no-repeat
+		-webkit-background-size: cover
+		background-size: cover
+		opacity: .16
+	.h2
+		color: #222
+		padding-bottom: 25px
+		margin-bottom: 38px
+		position: relative
+		display: inline-block
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			background-color: #222
+			width: 200px
+			height: 1px
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+	p
+		color: #222222
+		font-size: 20px
+		line-height: 40px
+		text-align: left
+	.image
+		width: calc(100% - 20px)
+		max-height: 400px
+		float: right
+		overflow: hidden
+		img
+			height: 100%
+	.map
+		height: 400px
+		iframe
+			width: 100%
+			height: 100%
 
 @import "media"

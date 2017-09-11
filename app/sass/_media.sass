@@ -6,13 +6,48 @@
 @media only screen and (max-width : 1199px)
   .bottom_slider .items
     height: 400px
+  .contact
+    .input_data, .time_input
+      margin: 0
+
+  .about_us
+    .left_image
+      margin-left: 0
+  .location
+    .image
+      width: 100%
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
   .bottom_slider .items
     height: 320px
+  .contact
+    .button
+      padding: 2px 15px
+  .about_us
+    .left_image
+      width: 100%
+    .content p
+      margin-top: 30px
+  .house_sizes p
+    font-size: 16px
+    line-height: 21px
+  .image-popup-no-margins
+    padding: 0 0 15px
+  .why_we_better .image
+    margin: 0 20px
+    flex: 0 0 100px
 
+  .discount p
+    font-size: 38px
+    line-height: 46px
+  .location
+    p
+      margin-bottom: 25px
+  .plan .image-popup-no-margins .fa
+    font-size: 50px
+    width: 88%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -24,6 +59,51 @@
   .h1
     font-size: 34px
     line-height: 50px
+  .contact
+    select
+      position: relative
+    #time
+      width: 100%
+    .submit_mobile
+      text-align: center
+    .submit
+      margin-top: 20px
+    .button
+      padding: 2px 40px
+    .top_wrapper
+      text-align: right
+  .map_desc
+    padding: 300px 0 50px
+
+  .about_us
+    .left_image
+      height: 400px
+      img
+        top: 50%
+        transform: translate(-50%, -50%)
+    margin-top: 42px
+
+  img.mfp-img
+    width: 95vw
+
+  .why_we_better
+    p
+      font-size: 22px
+      line-height: 26px
+    .h3
+      font-size: 16px
+    .image
+      margin: 0 15px
+      flex: 0 0 70px
+
+  .discount p
+    font-size: 34px
+    line-height: 44px
+
+  .location
+    .image, .map
+      height: 285px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
@@ -38,9 +118,61 @@
     .owl-next .fa
       right: 10px
 
+  .contact
+    .input_data
+      width: 100%
+      margin-bottom: 15px
+    .submit
+      margin-top: 30px
+    label
+      margin-bottom: 5px
+  .house_sizes p
+    font-size: 12px
+    line-height: 17px
+  .why_we_better
+    .item
+      flex-wrap: wrap
+      justify-content: center
+    .image
+      margin-bottom: 15px
+    .h3, p
+      text-align: center
+  .discount p
+    font-size: 30px
+    line-height: 38px
+  .location
+    .map
+      margin-bottom: 25px
+    .image
+      height: auto
+      max-height: none
+      img
+        height: auto
+        width: 100%
+  .plan .image-popup-no-margins .fa
+    font-size: 35px
+
 @media only screen and (max-width : 440px)
   .bottom_slider .items
     height: 200px
+  .desc_wrapper
+    .row > div
+      max-width: 100%
+      flex: 0 0 100%
+    .content > div
+      justify-content: center
+      p
+        text-align: center
+        padding-right: 40px
+  .map_desc
+    .content
+      &:before
+        display: none
+    .qr_code
+      text-align: center
+      padding: 30px 0 0
+    .phones_wrapper p
+      max-width: 147px
 
 /*==========  Mobile First  ==========*/
 

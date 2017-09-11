@@ -29,6 +29,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.js',
 		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
 		'app/js/common.min.js'
 		])
