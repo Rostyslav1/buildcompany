@@ -7,11 +7,106 @@
   .bottom_slider .items
     height: 400px
 
+  .main_header
+    .main_menu
+      ul
+        padding-top: 14px
+      a
+       padding: 0 15px
+    .main_contacts ul
+      padding-left: 0
+      padding-top: 14px
+    .main_logo a img
+      width: 100%
+    .main_title
+      max-width: 920px
+      margin: 122px auto 0
+  .img_build img
+    width: 100%
+    height: 100%
+  .img_build_sec img
+    width: 100%
+    height: 100%
+    padding-left: 0
+  .build_second
+    .info_list, .build_info
+      padding-left: 30px
+    .left
+      padding-right: 0
+  .build, .build_third
+    .build_info
+      padding-top: 40px
+    .info_list, .build_info
+      padding-right: 30px
+    .info_list
+      padding-bottom: 10px
+    .right
+      padding-left: 0
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
   .bottom_slider .items
     height: 320px
+  .main_contacts ul
+    text-align: right
+  .main_header .main_title
+    margin: 60px auto 0
+  .main_title h1
+    font-size: 38px
+    line-height: 46px
+  .main_about
+    margin-top: 70px
+
+  .build
+    .build_info
+      padding-top: 60px
+    .right
+      padding-left: 15px
+    .build_info
+      padding-right: 0
+      text-align: center
+    .info_list
+      padding-right: 0
+      p
+        text-align: center
+      ul
+        max-width: 553px
+        padding:
+          top: 20px
+          bottom: 30px
+        p
+          text-align: right
+  .build_second
+    .left
+      order: 2
+      padding-right: 15px
+    .build_info
+      padding-left: 0
+    .info_list p
+      text-align: center
+  .build_third
+    h2
+      padding-left: 0
+
+
+  .main_header .container
+    position: inherit
+    .main_menu
+      display: none
+      position: absolute
+      top: 92px
+      width: 100%
+      background-color: rgba(0, 0, 0, 0.58)
+      left: 0
+      right: 0
+      z-index: 10
+    .main_menu li
+      display: block
+      text-align: center
+      a
+        padding: 8px 15px
+
 
 
 /* Small Devices, Tablets */
@@ -24,6 +119,14 @@
   .h1
     font-size: 34px
     line-height: 50px
+  .main_about p:nth-child(1)
+    padding: 0
+  .main_header .main_logo a img
+    width: 105px
+  .main_title h1
+    font-size: 34px
+    line-height: 44px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
@@ -37,10 +140,20 @@
       left: 10px
     .owl-next .fa
       right: 10px
+    .main_title h1
+      font-size: 30px
+      line-height: 38px
+  .main_submit .button
+    font-size: 16px
+
 
 @media only screen and (max-width : 440px)
   .bottom_slider .items
     height: 200px
+  .main_contacts ul a
+    padding: 0 4px
+  #nav-icon3
+    margin-left: 4px
 
 /*==========  Mobile First  ==========*/
 
